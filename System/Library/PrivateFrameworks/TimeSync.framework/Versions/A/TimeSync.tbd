@@ -1,0 +1,29 @@
+--- !tapi-tbd-v2
+archs:           [ i386, x86_64 ]
+uuids:           [ 'i386: 32591638-7A85-3DC6-BEFB-20E25B5AAF99', 'x86_64: 04D3C799-4D51-342E-8F0F-7C91353B8936' ]
+platform:        macosx
+install-name:    /System/Library/PrivateFrameworks/TimeSync.framework/Versions/A/TimeSync
+objc-constraint: none
+exports:         
+  - archs:           [ i386, x86_64 ]
+    symbols:         [ _TSErrorDomain, _TSInvalidTime, _TSNullClockIdentifier, _TSNullgPTPClockIdentity, 
+                       _TimeSyncAddgPTPServices, _TimeSyncClockAddAWDLPort, _TimeSyncClockAddTimestamps, 
+                       _TimeSyncClockAddUDPv4EndToEndPort, _TimeSyncClockAddUDPv6EndToEndPort, 
+                       _TimeSyncClockCreateUserFilteredClock, _TimeSyncClockCreateWithClockIdentifer, 
+                       _TimeSyncClockDispose, _TimeSyncClockGetClockIdentifer, _TimeSyncClockGetClockRate, 
+                       _TimeSyncClockGetClockRateAnchorsAndGrandmasterIdentity, _TimeSyncClockGetClockRateAndAnchors, 
+                       _TimeSyncClockGetClockTimeAndGrandmasterIdentityForHostTime, 
+                       _TimeSyncClockGetClockTimeForHostTime, _TimeSyncClockGetHostTimeAndGrandmasterIdentityForClockTime, 
+                       _TimeSyncClockGetHostTimeForClockTime, _TimeSyncClockGetLockState, 
+                       _TimeSyncClockGetgPTPGrandmasterIdentity, _TimeSyncClockRemoveAWDLPort, 
+                       _TimeSyncClockRemoveUDPv4EndToEndPort, _TimeSyncClockRemoveUDPv6EndToEndPort, 
+                       _TimeSyncClockResetClock, _TimeSyncClockResetFilter, _TimeSyncClockSetLockStateChangeCallback, 
+                       _TimeSyncClockSetMasterChangeCallback, _TimeSyncClockSetgPTPGrandmasterChangeCallback, 
+                       _TimeSyncRemovegPTPServices, _TimeSyncSystemDomainClockIdentifier, 
+                       __TSKernelClockConvertFromDomainToMachAbsoluteTime, __TSKernelClockConvertFromMachAbsoluteToDomainTime ]
+    objc-classes:    [ _TSClock, _TSClockManager, _TSInterface, _TSKernelClock, _TSMachAbsoluteNanoseconds, 
+                       _TSUserFilteredClock, _TSgPTPClock, _TSgPTPEthernetPort, _TSgPTPFDEtEPort, 
+                       _TSgPTPFDPtPPort, _TSgPTPManager, _TSgPTPPort, _TSgPTPTime, 
+                       _TSgPTPUDPv4EtEPort, _TSgPTPUDPv4PtPPort, _TSgPTPUDPv6EtEPort, 
+                       _TSgPTPUDPv6PtPPort ]
+...

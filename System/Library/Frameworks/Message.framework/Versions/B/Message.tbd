@@ -1,0 +1,15 @@
+--- !tapi-tbd-v2
+archs:           [ i386, x86_64 ]
+uuids:           [ 'i386: 5B988E3F-A3CE-3582-8CC7-63A2B72755DB', 'x86_64: 1E13E37B-4DAB-331B-8957-8C896387B04E' ]
+platform:        macosx
+install-name:    /System/Library/Frameworks/Message.framework/Versions/B/Message
+current-version: 1604
+objc-constraint: none
+exports:         
+  - archs:           [ i386 ]
+    symbols:         [ _NSASCIIMailFormat, _NSMIMEMailFormat, _NSSMTPDeliveryProtocol, 
+                       _NSSendmailDeliveryProtocol ]
+    objc-classes:    [ _NSMailDelivery ]
+  - archs:           [ i386, x86_64 ]
+    symbols:         [ _MessageVersionNumber, _MessageVersionString ]
+...

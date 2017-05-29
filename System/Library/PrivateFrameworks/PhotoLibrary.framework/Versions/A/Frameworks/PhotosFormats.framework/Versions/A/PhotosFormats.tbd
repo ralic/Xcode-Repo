@@ -1,0 +1,34 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64 ]
+uuids:           [ 'x86_64: A895E98F-3B4D-3408-A32D-3205160D5F53' ]
+platform:        macosx
+install-name:    /System/Library/PrivateFrameworks/PhotoLibrary.framework/Versions/A/Frameworks/PhotosFormats.framework/Versions/A/PhotosFormats
+current-version: 3150.4.120
+objc-constraint: none
+exports:         
+  - archs:           [ x86_64 ]
+    symbols:         [ _PFAssetAdjustmentsBaseVersionKey, _PFAssetAdjustmentsDataBlobKey, 
+                       _PFAssetAdjustmentsFormatIdentifierKey, _PFAssetAdjustmentsFormatVersionKey, 
+                       _PFMetadataLivePhotoMinimumClientVersion, _PFMetadataLivePhotoPlaybackStyleIdentifier, 
+                       _PFMetadataLivePhotoPlaybackStyleIdentifierAutoloop, _PFMetadataLivePhotoPlaybackStyleIdentifierDefault, 
+                       _PFMetadataOriginatingSignature, _PFReadImageDisplayTimeFromVideoFileAtPath, 
+                       _PFReadMetadataFromVideoAVAsset, _PFReadMetadataFromVideoAtPath, 
+                       _PFReadPairingIdentifierFromCGImageProperties, _PFReadPairingIdentifierFromImageAtPath, 
+                       _PFReadPairingIdentifierFromVideoAtPath, _PFReadVideoDurationFromVideoFileAtPath, 
+                       _PFRemovePairingIdentifierFromCGImageProperties, _PFSlowMotionUtilitiesCreateErrorWithDescription, 
+                       _PFVideoAVCFObjectBuilderCopyAVCFAsset, _PFVideoAVCFObjectBuilderCreateErrorWithDescription, 
+                       _PFVideoAVCFObjectBuilderCreateExportSessionWithExportPreset, 
+                       _PFVideoAVCFObjectBuilderCreatePlayerItem, _PFVideoAVCFObjectBuilderCreateWithVideoAsset, 
+                       _PFVideoAVCFObjectBuilderDefaultVideoAdjustments, _PFVideoAVCFObjectBuilderGetAudioMix, 
+                       _PFVideoAVCFObjectBuilderGetMutableComposition, _PFVideoAVCFObjectBuilderGetTypeID, 
+                       _PFVideoComplementFileExtension, _PFVideoComplementImagePathKey, 
+                       _PFVideoComplementMetadataKey, _PFVideoComplementMetadataPairingIdentifierKey, 
+                       _PFVideoComplementMetadataTimingInfoKey, _PFVideoComplementMetadataVersionKey, 
+                       _PFVideoComplementVideoPathKey, _PhotosFormatsVersionNumber, 
+                       _PhotosFormatsVersionString, ___PFVideoAVCFObjectBuilderClassInitialize ]
+    objc-classes:    [ _PFAssetAdjustments, _PFImageMetadata, _PFSlowMotionConfiguration, 
+                       _PFSlowMotionRampConfiguration, _PFSlowMotionTimeRangeMapper, 
+                       _PFSlowMotionTimeRangeMapperScaledRegion, _PFSlowMotionUtilities, 
+                       _PFVideoAVObjectBuilder, _PFVideoAdjustments, _PFVideoComplement, 
+                       _PFVideoMetadata ]
+...

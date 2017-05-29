@@ -1,0 +1,21 @@
+--- !tapi-tbd-v2
+archs:           [ i386, x86_64, x86_64h ]
+uuids:           [ 'i386: 633A6BAF-221B-3173-8EC6-9184FDFFF8E4', 'x86_64: 5CE8FC45-4B15-355F-AF40-8A98F0ADC9CF', 
+                   'x86_64h: 1C2B6B4D-D77C-3F48-8D04-E5F4F2EAAECA' ]
+platform:        macosx
+install-name:    /System/Library/Frameworks/ImageIO.framework/Versions/A/Resources/libTIFF.dylib
+objc-constraint: none
+exports:         
+  - archs:           [ i386, x86_64, x86_64h ]
+    symbols:         [ __cg_TIFFClientOpen, __cg_TIFFClientdata, __cg_TIFFClose, 
+                       __cg_TIFFCurrentDirOffset, __cg_TIFFDefaultStripSize, __cg_TIFFFindCODEC, 
+                       __cg_TIFFFreeDirectory, __cg_TIFFGetField, __cg_TIFFGetFieldDefaulted, 
+                       __cg_TIFFIsByteSwapped, __cg_TIFFIsCODECConfigured, __cg_TIFFIsTiled, 
+                       __cg_TIFFLZWFreeDecodeTable, __cg_TIFFNumberOfStrips, __cg_TIFFNumberOfTiles, 
+                       __cg_TIFFReadEncodedStrip, __cg_TIFFReadRGBAImage, __cg_TIFFReadRGBAImageOriented, 
+                       __cg_TIFFReadRGBAStrip, __cg_TIFFReadScanline, __cg_TIFFReadTile, 
+                       __cg_TIFFScanlineSize, __cg_TIFFSetDirectory, __cg_TIFFSetErrorHandler, 
+                       __cg_TIFFSetErrorHandlerExt, __cg_TIFFSetField, __cg_TIFFSetWarningHandler, 
+                       __cg_TIFFStripSize, __cg_TIFFTileRowSize, __cg_TIFFTileSize, 
+                       __cg_TIFFWriteDirectory, __cg_TIFFWriteScanline ]
+...

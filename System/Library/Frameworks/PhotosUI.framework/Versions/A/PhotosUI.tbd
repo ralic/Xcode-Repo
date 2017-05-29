@@ -1,0 +1,16 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64 ]
+uuids:           [ 'x86_64: 30C99956-E287-3AAE-925A-E426D7827381' ]
+platform:        macosx
+install-name:    /System/Library/Frameworks/PhotosUI.framework/Versions/A/PhotosUI
+current-version: 3150.4.120
+objc-constraint: none
+exports:         
+  - archs:           [ x86_64 ]
+    symbols:         [ _PUEditingFullsizeImageDataTypeIdentifer, _PUEditingInitialPayloadTypeIdentifier, 
+                       _PhotosUIVersionNumber, _PhotosUIVersionString, _ph_dispatch_on_main_queue ]
+    objc-classes:    [ _PHEditingExtensionContext, _PHEditingHostViewPreferredSizes, 
+                       _PHEditingRemoteViewController, _PHEditingServiceViewController, 
+                       _PHLivePhotoBadge, _PHLivePhotoView, _PUEditingExtensionHostContext, 
+                       _PUEditingInitialPayload ]
+...

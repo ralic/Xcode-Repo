@@ -1,0 +1,10 @@
+--- !tapi-tbd-v2
+archs:           [ i386, x86_64 ]
+uuids:           [ 'i386: E0E2D048-37B6-322A-8581-F8C060B76B6F', 'x86_64: 535B25CC-A35D-304C-BB62-8A81CD1928B3' ]
+platform:        macosx
+install-name:    /usr/lib/log/liblog_cu.dylib
+objc-constraint: none
+exports:         
+  - archs:           [ i386, x86_64 ]
+    symbols:         [ _OSLogCopyFormattedString ]
+...

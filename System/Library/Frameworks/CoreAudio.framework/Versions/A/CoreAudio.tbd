@@ -1,0 +1,38 @@
+--- !tapi-tbd-v2
+archs:           [ i386, x86_64 ]
+uuids:           [ 'i386: 5715FE26-A243-35CA-94AA-F8C6F26302FB', 'x86_64: 184D9C49-248F-3374-944C-FD1A99A6B32E' ]
+platform:        macosx
+install-name:    /System/Library/Frameworks/CoreAudio.framework/Versions/A/CoreAudio
+objc-constraint: none
+exports:         
+  - archs:           [ i386, x86_64 ]
+    symbols:         [ _AudioConvertHostTimeToNanos, _AudioConvertNanosToHostTime, 
+                       _AudioDeviceAddIOProc, _AudioDeviceAddPropertyListener, _AudioDeviceCreateIOProcID, 
+                       _AudioDeviceCreateIOProcIDWithBlock, _AudioDeviceCreateIOProcIDWithClockedBlock, 
+                       _AudioDeviceCreateIOProcIDWithClockedProc, _AudioDeviceDestroyIOProcID, 
+                       _AudioDeviceDuck, _AudioDeviceEnterMode, _AudioDeviceExitMode, 
+                       _AudioDeviceGetCurrentTime, _AudioDeviceGetNearestStartTime, 
+                       _AudioDeviceGetProperty, _AudioDeviceGetPropertyInfo, _AudioDeviceRead, 
+                       _AudioDeviceRemoveIOProc, _AudioDeviceRemovePropertyListener, 
+                       _AudioDeviceRun, _AudioDeviceSetProperty, _AudioDeviceStart, 
+                       _AudioDeviceStartAtTime, _AudioDeviceStop, _AudioDeviceTranslateTime, 
+                       _AudioDeviceWrite, _AudioGetCurrentHostTime, _AudioGetHostClockFrequency, 
+                       _AudioGetHostClockMinimumTimeDelta, _AudioHardwareAddPropertyListener, 
+                       _AudioHardwareAddRunLoopSource, _AudioHardwareBeMaster, _AudioHardwareClaimAudioDeviceID, 
+                       _AudioHardwareClaimAudioStreamID, _AudioHardwareCreateAggregateDevice, 
+                       _AudioHardwareDestroyAggregateDevice, _AudioHardwareDevicePropertyChanged, 
+                       _AudioHardwareDevicesCreated, _AudioHardwareDevicesDied, _AudioHardwareGetProperty, 
+                       _AudioHardwareGetPropertyInfo, _AudioHardwareRemovePropertyListener, 
+                       _AudioHardwareRemoveRunLoopSource, _AudioHardwareSetProperty, 
+                       _AudioHardwareStreamPropertyChanged, _AudioHardwareStreamsCreated, 
+                       _AudioHardwareStreamsDied, _AudioHardwareUnload, _AudioObjectAddPropertyListener, 
+                       _AudioObjectAddPropertyListenerBlock, _AudioObjectAddPropertyListenerInternal, 
+                       _AudioObjectCreate, _AudioObjectExists, _AudioObjectGetPropertyData, 
+                       _AudioObjectGetPropertyDataSize, _AudioObjectHasProperty, 
+                       _AudioObjectIsPropertySettable, _AudioObjectPropertiesChanged, 
+                       _AudioObjectRemovePropertyListener, _AudioObjectRemovePropertyListenerBlock, 
+                       _AudioObjectSetPropertyData, _AudioObjectShow, _AudioObjectsPublishedAndDied, 
+                       _AudioStreamAddPropertyListener, _AudioStreamGetProperty, 
+                       _AudioStreamGetPropertyInfo, _AudioStreamRemovePropertyListener, 
+                       _AudioStreamSetProperty ]
+...

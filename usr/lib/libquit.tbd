@@ -1,0 +1,15 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64 ]
+uuids:           [ 'x86_64: F7745999-F099-3A17-AC77-8313634A7507' ]
+platform:        macosx
+install-name:    /usr/lib/libquit.dylib
+objc-constraint: none
+exports:         
+  - archs:           [ x86_64 ]
+    symbols:         [ _LQCachePort, _LQForceQuit, _LQNotifyCpuResource, _LQNotifyFacelessQuitHappening, 
+                       _LQNotifyQuitLikely, _LQNotifySpinLikely, _LQNotifyStuckApp, 
+                       _LQNotifyUiQuitHappening, _LQNotifyUnstuckApp, _LQNotifyWakeupsResource, 
+                       _LQReportCpuResource, _LQReportPotentialHang, _LQReportPotentialSpin, 
+                       _LQReportStuckApp, _LQReportUnstuckApp, _LQReportWakeupsResource, 
+                       _quitVersionNumber, _quitVersionString ]
+...

@@ -1,0 +1,13 @@
+--- !tapi-tbd-v2
+archs:           [ i386, x86_64 ]
+uuids:           [ 'i386: 71BFA1CF-A08E-3014-86EE-A2611ACA1860', 'x86_64: 3262B756-7E6E-31DA-A6F5-8A42D8B933EB' ]
+platform:        macosx
+install-name:    /usr/lib/libMatch.1.dylib
+objc-constraint: none
+exports:         
+  - archs:           [ i386, x86_64 ]
+    symbols:         [ _matchCombine, _matchCompile, _matchDiagram, _matchDup, _matchExec, 
+                       _matchFree, _matchInit, _matchOptimize, _matchPack, _matchPrintNodes, 
+                       _matchSetOption, _matchUnpack, _matchValidate, _nfaFree, _nodeModPtrRefs, 
+                       _printGraphNode, _printRunNode ]
+...

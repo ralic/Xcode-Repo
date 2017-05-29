@@ -1,0 +1,21 @@
+--- !tapi-tbd-v2
+archs:           [ i386, x86_64 ]
+uuids:           [ 'i386: 2D2B8B51-D019-3D19-AB29-2256A35CCF57', 'x86_64: CA4EA5D2-72CF-33C1-A7B0-F3DE0304A684' ]
+platform:        macosx
+install-name:    /usr/lib/libThaiTokenizer.dylib
+objc-constraint: none
+exports:         
+  - archs:           [ i386, x86_64 ]
+    symbols:         [ _CreateTransitionArrayFromTrie, _GetChunk, _GetTokenizedSegmentedPoints, 
+                       _GetTokenizedStrings, _MAXCHUNKSIZE, _MAXUNKCHOICE, _MAXWORDCHOICE, 
+                       _MAXWORDSIZE, _ReleaseTransitionTable, _SINGLECHARUNKSCORE, 
+                       _Search, _SetChunk, _StackCreate, _StackGetValue, _StackIsEmpty, 
+                       _StackIsFull, _StackPop, _StackPush, _StackRelease, _TOKENIZEDONLYTHAI, 
+                       _ThaiTokenizerAdvanceToNextToken, _ThaiTokenizerCreate, _ThaiTokenizerDestroy, 
+                       _ThaiTokenizerGetCurrentTokenRange, _ThaiTokenizerGoToTokenAtIndex, 
+                       _ThaiTokenizerSetString, _ThaiTokenizerSetStringWithRange, 
+                       _UNKSCORE, _getChunkType, _getTokenType, _getUnkProb, _isAcronym, 
+                       _isNumber, _isPunct, _isPunctAll, _isThai, _isThaiBreakChar, 
+                       _isThaiConsonant, _isThaiEndingChar, _isThaiLeadingChar, _isThaiLeadingCharAtIndex, 
+                       _isThaiPunct, _isThaiVowel, _isWhiteSpace, _mergeAcronym ]
+...

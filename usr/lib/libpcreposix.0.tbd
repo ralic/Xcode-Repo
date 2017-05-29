@@ -1,0 +1,16 @@
+--- !tapi-tbd-v2
+archs:           [ i386, x86_64 ]
+uuids:           [ 'i386: F999949B-9430-3689-9DB7-E702AB4B82D8', 'x86_64: 8EC095E2-5DEC-3AAB-BBEA-025971DCE62D' ]
+platform:        macosx
+flags:           [ flat_namespace ]
+install-name:    /usr/lib/libpcreposix.0.dylib
+objc-constraint: none
+exports:         
+  - archs:           [ i386, x86_64 ]
+    symbols:         [ _regcomp, _regerror, _regexec, _regfree ]
+undefineds:      
+  - archs:           [ i386, x86_64 ]
+    symbols:         [ ___sprintf_chk, ___stack_chk_fail, ___stack_chk_guard, _free, 
+                       _malloc, _pcre_compile2, _pcre_exec, _pcre_free, _pcre_info, 
+                       _strlen, _strncpy, dyld_stub_binder ]
+...

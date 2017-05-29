@@ -1,0 +1,16 @@
+--- !tapi-tbd-v2
+archs:           [ i386, x86_64 ]
+uuids:           [ 'i386: E5251CDE-7955-3396-BCD3-18B5B262AC64', 'x86_64: 55019390-33EA-3EE8-8DC6-055D0E81698E' ]
+platform:        macosx
+install-name:    /usr/lib/libcupsimage.2.dylib
+current-version: 2.3
+compatibility-version: 2
+objc-constraint: none
+exports:         
+  - archs:           [ i386, x86_64 ]
+    symbols:         [ __cupsRasterAddError, __cupsRasterClearError, __cupsRasterExecPS, 
+                       _cupsRasterClose, _cupsRasterErrorString, _cupsRasterInitPWGHeader, 
+                       _cupsRasterInterpretPPD, _cupsRasterOpen, _cupsRasterOpenIO, 
+                       _cupsRasterReadHeader, _cupsRasterReadHeader2, _cupsRasterReadPixels, 
+                       _cupsRasterWriteHeader, _cupsRasterWriteHeader2, _cupsRasterWritePixels ]
+...
